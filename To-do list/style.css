@@ -1,0 +1,216 @@
+*{
+  margin: auto;
+  padding: auto;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+
+.container{
+  flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+  justify-content: space-between;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-image: url(image/bg.png);
+  /* width: 100%;
+  min-height: 100vh; */
+  /* background-color: #fba7af; */
+  padding: 10px;
+}
+
+.todo-app{
+  width: 50%;
+  max-width: 1000px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  /* background-color: #FFD700; */
+  background-color: #dce9f5;
+
+
+}
+
+.todo-app h2{
+  color: #000080;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4682B4;
+  border-radius:  30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: #000080;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
+#input-box{
+  font-size: medium;
+  font-weight: bold;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #000080;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+
+}
+
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 20%;
+  background-image: url(/image/empty-box.png);
+  background-size: cover;
+  background-color: #fff;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  background-image: url(/image/check-box.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #edeef0;
+}
+
+#wel{
+  background-image: url(/image/welcome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+  /* background-position: center;
+  width: auto;
+  height: auto; */
+
+  /* width: 50%; */
+  /* height: 50%; */
+  /* min-height: 100vh; */
+  /* background-color: #fba7af; */
+  /* padding: 10px; */
+}
+
+.clickable-area {
+  position: absolute;
+  top: 33%;  
+  left: 18%; 
+  width: 950px;
+  height: 300px; 
+  /* background: rgba(255, 0, 0, 0.3); Transparent red to see the area (remove later) */
+  cursor: pointer;
+}
+
+.clickable-area a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.edit-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+}
+
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent; /* Makes the header background transparent */
+  /* color: white; */
+  /* width: 100%; Ensures it stretches across the screen */
+  position: absolute; /* Keeps it at the top */
+  /* top: 0;
+  left: 0; */
+}
+
+#youtube-link {
+  text-decoration: none;
+  color: navy ;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 50px 1390px;
+  border-radius: 30%;
+}
+
+
+header {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent; /* Makes the header background transparent */
+  /* color: white; */
+  /* width: 100%; Ensures it stretches across the screen */
+  position: absolute; /* Keeps it at the top */
+  /* top: 0;
+  left: 0; */
+}
+
+
+
+
+
